@@ -26,3 +26,4 @@ echo " nome: $nomearq "
       echo "Total de arquivos c: $c"
       echo "Total de arquivos py: $py"
   
+fi
