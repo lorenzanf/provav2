@@ -1,0 +1,13 @@
+#!/bin/bash
+
+arq=$1
+    if [ -f $arq ]
+    then
+      if [ -s $arq ]
+      then
+        copy home
+        echo -e " Arquivo copiado pra home"
+      else
+        touch $arq
+        echo -e " Arquivo criado "
+      fi
