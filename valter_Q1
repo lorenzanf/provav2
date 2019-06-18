@@ -1,0 +1,17 @@
+#!/bin/bash
+read name
+read idade
+if [ $idade -lt 16 ]
+then
+echo -e " $name nao pode votar "
+if [ $idade -ge 16 -le 17 ]
+then
+echo -e " $name vota facultativo "
+if [ $idade -ge 18 -le 70 ]
+then
+echo -e " $name voto obrigatorio "
+if [ $idade -gt 70 ]
+then
+echo -e " $name vota facultativo "
+
+fi
