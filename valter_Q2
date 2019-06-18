@@ -1,0 +1,13 @@
+#!/bin/bash
+
+  texto=0
+      for texto in $(ls | wc -l)
+      do 
+     case "$texto" in
+        *.txt)
+           texto=$(texto)
+           ;; 
+      esac
+     done
+      echo "$name cat -10"
+   fi
