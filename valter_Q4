@@ -1,0 +1,28 @@
+ #!/bin/bash
+      arq=0
+      te=0
+      c=0
+      py=0
+      for nomearq in $(atual)
+      do 
+echo " nome: $nomearq "
+     case "$nomearq" in
+        *.txt)
+             arq=$(( $arq + 1 ))
+             te=$(( $te + 1 ))
+           ;;
+        *.c)
+             arq=$(( $arq + 1 ))
+             c=$(( $c + 1 ))
+           ;;
+        *.py)
+             arq=$(( $arq + 1 ))
+             py=$(( $py + 1 ))
+           ;; 
+       esac
+     done
+      echo "Total de arquivos lido : $arq"
+      echo "Total de arquivos texto: $te"
+      echo "Total de arquivos c: $c"
+      echo "Total de arquivos py: $py"
+  
